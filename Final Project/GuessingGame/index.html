@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>State Capital Guessing Game</title>
+<script src="cities.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body onLoad=guessStatus() onKeyPress=catchKeyCode()>
+<div class="container">
+
+<form name=form1>
+
+	<h1 id="pageTitle"> THE GUESSING GAME</h1>
+	<table class=tab>
+        <tr>
+        	<td><img src="images/a_guessing_game.png" id="showState" alt="State Capital guessing game ">
+            </td>
+      	</tr>
+        <tr>
+			<td class=td1>
+				<input type=text name=hint value="The State Capitol Guessing Game" readonly class=txt1>
+			</td>
+		</tr>
+        <tr>
+			<td class=td1>
+				<input type=text name=stateClue value="Press the New button to begin playing!" readonly class=txt1>
+			</td>
+		</tr>
+		<tr>
+			<td class=td1>
+				<input type=text name=guess1 class=txt2 title="Guess Here">
+			</td>
+		</tr>
+        
+		<tr>
+        
+			<td class=td1 id="setOfButtons">
+				<input type=button id="guessBtn" disabled value=Guess class=btn title="Click here to get a hint or check your guess.">
+				<input type=button id="clearBtn" value=Clear class=btn title="Click here to clear the text box.">
+                <input type=button id="newBtn" value=New class=btn title="Click here to start a new game.">
+                <input type=button id="resetBtn" value=Reset class=resetBtn title="Click here to reset game to default settings. CAUTION! This will remove High Score!">
+			</td>
+		</tr>
+        <tr>
+        	<td class=td1>
+            <input type=text name=top1 value="High Score: 0" readonly class=txt1>
+            <input type=text name=current1 value="Current Score: 0" readonly class=txt1>
+        	</td>
+        </tr>
+        
+	</table>
+    
+</form>
+</div>
+</body>
+</html>
